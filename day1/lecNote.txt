@@ -47,3 +47,25 @@ working area           staging area            local_repo            remote repo
 register on github :  https://github.com/signup
 
 
+handel authentication ==>
+email ==> git config --global user.email "emailGitHub" 
+name ==> git config --global user.name "nameGitHub" 
+
+create repo on git hub 
+(git init 
+git add .
+git commit -m "msg"
+git remote add origin "link"
+git push origin master
+
+)
+upload all files ==> git push origin master
+pull changes on loacal ==> git pull origin master
+
+
+
+=========================> after upload on git hub after first time
+git add .
+git commit -m "msg"
+git push origin master
+
