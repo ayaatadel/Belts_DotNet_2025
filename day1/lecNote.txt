@@ -11,3 +11,7 @@ working area           staging area            local_repo            remote repo
 =================> git add file_name
 =================> git add .
                            =============> git commit -m "msg"
+                                              // -a : add -m:msg 
+      ====================================> git commit -a -m "msg    "                     
+
+
