@@ -16,3 +16,8 @@
 ###  Markdown cheet sheet
 
 [Markdown cheet sheet](https://www.markdownguide.org/cheat-sheet/)
+
+#### readme file example
+https://www.makeareadme.com/
+
+https://github.com/facebook/react
