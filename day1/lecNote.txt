@@ -13,5 +13,7 @@ working area           staging area            local_repo            remote repo
                            =============> git commit -m "msg"
                                               // -a : add -m:msg 
       ====================================> git commit -a -m "msg    "                     
+      ====================================> git commit -am "msg"  
+      ====> file must be added to staging area (git add FN)                   
 
 
