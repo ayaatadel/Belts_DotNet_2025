@@ -1,0 +1,5 @@
+.env
+*.pdf
+imgs/*.jpg
+test.txt
+test
