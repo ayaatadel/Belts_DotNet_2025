@@ -16,4 +16,7 @@ working area           staging area            local_repo            remote repo
       ====================================> git commit -am "msg"  
       ====> file must be added to staging area (git add FN)                   
 
-
+           // reset all adds that not commits
+     <================== git reset 
+     <================== git reset file_name
+     =========> reset add on this file  
