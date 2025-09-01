@@ -20,6 +20,16 @@ working area           staging area            local_repo            remote repo
      <================== git reset 
      <================== git reset file_name
      =========> reset add on this file  
+                        
+                        <=================
+               reset one change and code eixt 
+                   git reset --soft Head^  
+
+                   (remove only commit)        
+                        <=================
+               reset one change and code delet 
+                   git reset --Hard Head^ 
+                     (remove  commit + code (change))  
+    ^ : number of steps               
 
 
-     
