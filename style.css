@@ -1,0 +1,72 @@
+ul{
+padding: 10px;
+display: flex;
+justify-content: space-around;
+background-color: rgb(196, 194, 194);
+}
+
+ul li{
+    padding: 10px;
+    list-style: none;
+
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+
+}
+
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section div{
+    width: 30%;
+    border: 2px solid rgb(204, 190, 190);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section div img{
+    width: 70%;
+    height: 70%;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+}
+
+section div button{
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+
+section div p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+
+.text span a{
+    color:brown;
+    text-decoration: none;
+
+}
