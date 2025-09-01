@@ -1,72 +1,342 @@
-ul{
-padding: 10px;
-display: flex;
-justify-content: space-around;
-background-color: rgb(196, 194, 194);
-}
-
-ul li{
-    padding: 10px;
-    list-style: none;
-
-  
-}
-
-ul li a{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     text-decoration: none;
-    color: brown;
-    font-size: 20px;
-
-}
-
-
-section{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-section div{
-    width: 30%;
-    border: 2px solid rgb(204, 190, 190);
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-section div img{
-    width: 70%;
-    height: 70%;
-    border-radius: 30%;
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
-}
-
-section div button{
-    padding: 10px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border: none;
-    background-color: brown;
-    color: white;
-}
-
-section div p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     
 }
 
-.text span a{
-    color:brown;
-    text-decoration: none;
+/* root */
+:root {
+    --base-color: #ff0000;
+    --header-color: #f44336;
+    --font-family: "Poppins", sans-serif;
+  }
+  
+* h2 {
+    color: var(--header-color);
+    font-family: var(--font-family);
+    position: relative;
+    
+}
+  
+/* sidebar */
+.container{
+    height: 100%;
+    display: inline-block;
 
+}
+
+.sidebar{
+    background-color: #f44336;
+    height: 100%;
+    width: 300px;
+    padding:75px 20px 30px 13px  ;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+.company{
+    padding: 30px 0px 70px 15px;
+    color: white;
+    font-size: 30px;
+    font-family: var(--font-family);
+}
+.sidebar .text{
+    color: white;
+    font-size: 19px;
+    padding: 9px 15px;
+    font-family: var(--font-family);
+}
+.sidebar .text:hover{
+    color: black;
+    background-color: white;
+    font-size: 21px;
+}
+
+/*  Showcase */
+
+
+.home .text{
+    margin-top: 80px;
+    padding: .16px 16px;
+    margin-left: 340px;
+    overflow: visible;
+}
+.home .text h1{
+    font-size: 65px;
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+}
+.home .text h2{
+    font-size: 50px;
+    color:  rgb(244, 67, 54);
+}
+.home .imges .imgl{
+    width: 35%;
+    margin-left: 350px;
+    display: inline-block;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.home .imges .imgr{
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+.home .imges .imgl .imge , .home .imges .imgr .imge {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+.home .imges .imgl .imge a img , .home .imges .imgr .imge a img{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+.home .imges .imgl a img:hover{
+    opacity: 1;
+}
+.home .imges .imgr a img:hover{
+    opacity: 1;
+}
+/* .home .imges .imge{
+    margin: 16px 0px -6px ;
+    width: 219px;
+    height: 240px;
+    
+} */
+
+/* Services */
+
+.Services{
+    margin-left: 350px;
+    
+}
+.Services .text1 h1{
+    font-size: 62px;
+    font-family: var(--font-family);
+    color: #f44336;
+    margin-top: 90px;
+}
+.Services .content p{
+    padding-top: 16px;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+
+/* Designers */
+.Designers{
+    margin-left: 350px;
+}
+.Designers .head h1{
+    font-size: 50px;
+    color: #f44336;
+    font-family: var(--font-family);
+    margin-top: 90px;
+}
+.Designers .text p{
+    padding-top: 16px;
+    font-size: 18px;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.Designers .text .our{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Designers .design-container{
+    width: 100%;
+    /* text-align: center; */
+}
+.Designers .design-container .designer{
+    width: calc(100%/3);
+    margin: auto;
+    background-color: #f1f1f1;
+    float: left;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    font-family: var(--font-family);
+}
+.Designers .design-container .designer img{
+    width: 100%;
+    height: 100%;
+}
+
+.Designers .design-container h3{
+    padding: 10px 10px;
+}
+.Designers .design-container h4{
+    opacity: .60;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+/* Packages */
+
+.Packages{
+    margin-left: 350px;
+}
+.Packages .head h1{
+    font-size: 50px;
+    font-family: var(--font-family);
+    color: #f44336;
+    margin-top: 90px;
+}
+.Packages .head p{
+    padding-top: 16px;
+    font-size: 18px;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.Packages .table{
+    margin-top: 50px;
+}
+
+.Packages .table .basic{
+    background-color: #616161;
+}
+.Packages .table th{
+    font-size: 30px;
+    color: white;
+    background-color: #f44336 ;
+}
+
+.Packages .table td{
+    font-size: 20px;
+    padding: 20px;
+
+}
+/* Contact   */
+.contact{
+    margin-left: 350px;
+}
+.contact .text h1{
+    font-size: 50px;
+    font-family: var(--font-family);
+    color: #f44336;
+    margin-top: 90px;
+}
+.contact .text p{
+    padding-top: 16px;
+    font-size: 18px;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+/* table */
+
+.Packages .table {
+    overflow: hidden;
+    padding: 20px;
+}
+  
+.Packages .table table {
+    width: 45%;
+    border: none;
+    background-color: #f1f1f1;
+    margin: 0 2.5%;
+    float: left;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.Packages .table th {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px;
+    font-family: var(--font-family);
+}
+
+.Packages .table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+.Packages .table td.font {
+    background-color: #f1f1f1;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.Packages .table td.font p{
+    font-size: 14px;
+    color:#616161;
+    padding: 10px;
+}
+
+.signup-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    width: 30%;
+    font-size: 18px;
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+.signup-button-but{
+    background-color: white;
+    border-radius: 4px;
+    border: white;
+    width: 30%;
+    font-family: var(--font-family);
+    border-radius: 4px;
+} 
+
+.signup-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.signup-button-but:hover {
+    background-color: black;
+    color: white;
+}
+
+/* form */
+.contact .form{
+    padding: .16px 36px 16px ;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.form input ,button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.form .send{
+    background-color: #f44336;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 100px;
+}
+.form .send:hover{
+    background-color: white;
+    color: black;
+}
+.contact .powered{
+    padding:70px 10px 70px 700px;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #61616111;
+}
+.contact .powered a{
+    color: black;
+    text-decoration: underline;
 }
