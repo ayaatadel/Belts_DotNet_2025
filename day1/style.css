@@ -1,0 +1,20 @@
+ul{
+padding: 10px;
+display: flex;
+justify-content: space-around;
+background-color: rgb(196, 194, 194);
+}
+
+ul li{
+    padding: 10px;
+    list-style: none;
+
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+
+}

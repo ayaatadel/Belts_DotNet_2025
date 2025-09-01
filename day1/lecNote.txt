@@ -20,3 +20,6 @@ working area           staging area            local_repo            remote repo
      <================== git reset 
      <================== git reset file_name
      =========> reset add on this file  
+
+
+     
