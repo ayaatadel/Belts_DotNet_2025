@@ -39,8 +39,10 @@ working area           staging area            local_repo            remote repo
                    git reset --Hard Head^ 
                      (remove  commit + code (change))  
     ^ : number of steps               
-
-
+                                              link (local , remote(repo on github))
+                                    =================================> git remote add origin link_repo
+                                     add all changes local  ==> remote 
+                                    ================>  git push origin master
 =================================>
 register on github :  https://github.com/signup
 
